@@ -1,0 +1,82 @@
+export const branches = [
+  {
+    id: 1,
+    slug: "sriracha",
+    name: "ANIN ชากค้อ",
+    nameShort: "SRC",
+    nickname: "บิ๊กยา ศรีราชา",
+    phone: "082-031-1590",
+    address: "291/62 หมู่ 8 ตำบลสุรศักดิ์ อำเภอศรีราชา จังหวัดชลบุรี 20110",
+    hours: "08:00–21:00 น. ทุกวัน",
+    mapUrl: "https://maps.app.goo.gl/zis835871bYTFUeJA",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.2567435759006!2d100.95553890000004!3d13.1461986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b7a253cf2735%3A0x4ab8424597a6eb8b!2z4Lia4Li04LmK4LiB4Lii4LiyIC0gQmlneWEg4Lio4Lij4Li14Lij4Liy4LiK4LiyIChQaGFybWFjeSwg4Lij4LmJ4Liy4LiZ4LiC4Liy4Lii4Lii4Liy4LmD4LiB4Lil4LmJ4LiJ4Lix4LiZKQ!5e0!3m2!1sth!2sth!4v1783498667588!5m2!1sth!2sth",
+    image: "/images/branches/sriracha.jpg",
+    parking: true,
+  },
+  {
+    id: 2,
+    slug: "kao-kilo",
+    name: "ANIN เก้ากิโล",
+    nameShort: "KKL",
+    nickname: "บิ๊กยา เก้ากิโล",
+    phone: "098-820-1512",
+    address: "48/23 หมู่ 3 ตำบลสุรศักดิ์ อำเภอศรีราชา จังหวัดชลบุรี 20110",
+    hours: "08:00–21:00 น. ทุกวัน",
+    mapUrl: "https://maps.app.goo.gl/dkYaaBRcsD7QeYyp6",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.2047516931666!2d100.93490469999999!3d13.149481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b726906ee485%3A0xd18fb05f77320ff0!2z4Lia4Li04LmK4LiB4Lii4LiyIC0g4LmA4LiB4LmJ4Liy4LiB4Li04LmC4LilICjguKPguYnguLLguJnguILguLLguKLguKLguLLguYPguIHguKXguYnguInguLHguJkp!5e0!3m2!1sth!2sth!4v1783498710353!5m2!1sth!2sth",
+    image: "/images/branches/kao-kilo.jpg",
+    parking: true,
+  },
+  {
+    id: 3,
+    slug: "sriracha-tiger-zoo",
+    name: "ANIN สวนเสือศรีราชา",
+    nameShort: "SSS",
+    nickname: "บิ๊กยา สวนเสือศรีราชา",
+    phone: "092-246-9002",
+    address: "517/44 หมู่ 3 ตำบลหนองขาม อำเภอศรีราชา จังหวัดชลบุรี 20230",
+    hours: "08:00–21:00 น. ทุกวัน",
+    mapUrl: "https://maps.app.goo.gl/bRtyAzcCC3mw34Zd7",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7770.43452910676!2d101.0039418!3d13.1486911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c9000dac1729%3A0x83842e1bea08f334!2z4Lia4Li04LmK4LiB4Lii4LiyIC0gQmlneWEg4Liq4Lin4LiZ4LmA4Liq4Li34Lit4Lio4Lij4Li14Lij4Liy4LiK4LiyIChQaGFybWFjeSwg4Lij4LmJ4Liy4LiZ4LiC4Liy4Lii4Lii4Liy4LmD4LiB4Lil4LmJ4LiJ4Lix4LiZKQ!5e0!3m2!1sth!2sth!4v1783498520834!5m2!1sth!2sth",
+    image: "/images/branches/sriracha-tiger-zoo.jpg",
+    parking: true,
+  },
+]
+
+export const contactDepartments = [
+  {
+    icon: "cart",
+    label: "นำเสนอยาและผลิตภัณฑ์ ฝ่ายจัดซื้อ",
+    description: "นำเสนอสินค้า ใบเสนอราคา หรือสอบถามการจัดซื้อ",
+    email: "purchase@anin.co.th",
+    type: "email" as const,
+  },
+  {
+    icon: "users",
+    label: "สมัครงาน ฝ่ายบุคคล",
+    description: "ร่วมงานกับเรา ส่งประวัติและสมัครงาน",
+    email: "hr@anin.co.th",
+    type: "email" as const,
+  },
+  {
+    icon: "building",
+    label: "เสนอพื้นที่ขายหรือให้เช่า",
+    description: "เสนอพื้นที่หน้าร้านหรือทำเลธุรกิจ",
+    email: "marketing@anin.co.th",
+    type: "email" as const,
+  },
+  {
+    icon: "megaphone",
+    label: "แจ้งปัญหา ร้องเรียน หรือข้อเสนอแนะ",
+    description: "แจ้งเรื่องจากลูกค้า ซัพพลายเออร์ คู่ค้า หรือบุคคลทั่วไป",
+    formUrl: "https://forms.google.com",
+    type: "form" as const,
+  },
+]
+
+export const faqs = [
+  { q: "ทุกสาขาให้บริการเหมือนกันหรือไม่",       a: "ทุกสาขาดำเนินงานภายใต้มาตรฐานเดียวกัน มีเภสัชกรวิชาชีพประจำทุกสาขา และให้บริการในระดับเดียวกันทุกแห่ง" },
+  { q: "มีบริการจัดส่งหรือไม่",                   a: "มีบริการจัดส่งตามพื้นที่และเงื่อนไขการให้บริการของ ANIN สามารถสอบถามเพิ่มเติมได้ผ่าน LINE Official Account" },
+  { q: "สามารถสั่งซื้อล่วงหน้าที่หน้าร้านได้หรือไม่", a: "สามารถสั่งซื้อล่วงหน้าผ่าน LINE Official Account ได้ แล้วมารับที่สาขาที่สะดวก" },
+  { q: "ต้องนัดหมายก่อนเข้ารับบริการหรือไม่",    a: "ไม่จำเป็นต้องนัดหมาย สามารถเข้ารับบริการได้เลยในเวลาทำการ หรือปรึกษาเภสัชกรล่วงหน้าผ่าน LINE ก็ได้" },
+]
