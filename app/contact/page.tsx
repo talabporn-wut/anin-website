@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import {
     UserCheck,
     BadgeCheck,
@@ -114,13 +115,13 @@ function HeroSection() {
 }
 
 /* ── Image Carousel ── */
-const shopImages = [
-    { src: "/images/branches/shop-1.jpg", alt: "หน้าร้าน ANIN สาขาชากค้อ" },
-    { src: "/images/branches/shop-2.jpg", alt: "ภายในร้าน ANIN" },
-    { src: "/images/branches/shop-3.jpg", alt: "เภสัชกร ANIN ให้คำปรึกษา" },
-    { src: "/images/branches/shop-4.jpg", alt: "คลังสินค้า ANIN" },
-    { src: "/images/branches/shop-5.jpg", alt: "ทีมงาน ANIN" },
-]
+const shopImages = branches.flatMap((branch) => [
+    { src: branch.image, alt: `หน้าร้าน ${branch.name}` },
+    ...(branch.images ?? []).map((src, i) => ({
+        src,
+        alt: `ภายในร้าน ${branch.name} ${i + 1}`,
+    })),
+])
 
 function ImageCarouselSection() {
     const [current, setCurrent] = useState(0)
@@ -156,17 +157,8 @@ function ImageCarouselSection() {
                                     className="shrink-0 rounded-xl overflow-hidden bg-blue-50"
                                     style={{ width: `calc(100% / ${visibleCount} - 8px)` }}
                                 >
-                                    <div className="aspect-video flex flex-col items-center justify-center gap-1 text-blue-200">
-                                        {/*
-                      เมื่อมีรูปจริง:
-                      <Image src={img.src} alt={img.alt} fill className="object-cover" />
-                    */}
-                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                                            <circle cx="8.5" cy="8.5" r="1.5" />
-                                            <path d="M21 15l-5-5L5 21" />
-                                        </svg>
-                                        <span className="text-xs">{img.alt}</span>
+                                    <div className="relative aspect-video">
+                                        <Image src={img.src} alt={img.alt} fill className="object-cover" />
                                     </div>
                                 </div>
                             ))}

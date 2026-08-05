@@ -25,6 +25,11 @@ export const branches = [
     mapUrl: "https://maps.app.goo.gl/dkYaaBRcsD7QeYyp6",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.2047516931666!2d100.93490469999999!3d13.149481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b726906ee485%3A0xd18fb05f77320ff0!2z4Lia4Li04LmK4LiB4Lii4LiyIC0g4LmA4LiB4LmJ4Liy4LiB4Li04LmC4LilICjguKPguYnguLLguJnguILguLLguKLguKLguLLguYPguIHguKXguYnguInguLHguJkp!5e0!3m2!1sth!2sth!4v1783498710353!5m2!1sth!2sth",
     image: "/images/branches/kao-kilo.jpg",
+    images: [
+      "/images/branches/kao-kilo-interior-1.jpg",
+      "/images/branches/kao-kilo-interior-2.jpg",
+      "/images/branches/kao-kilo-interior-3.jpg",
+    ],
     parking: true,
   },
   {
@@ -39,6 +44,12 @@ export const branches = [
     mapUrl: "https://maps.app.goo.gl/bRtyAzcCC3mw34Zd7",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7770.43452910676!2d101.0039418!3d13.1486911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c9000dac1729%3A0x83842e1bea08f334!2z4Lia4Li04LmK4LiB4Lii4LiyIC0gQmlneWEg4Liq4Lin4LiZ4LmA4Liq4Li34Lit4Lio4Lij4Li14Lij4Liy4LiK4LiyIChQaGFybWFjeSwg4Lij4LmJ4Liy4LiZ4LiC4Liy4Lii4Lii4Liy4LmD4LiB4Lil4LmJ4LiJ4Lix4LiZKQ!5e0!3m2!1sth!2sth!4v1783498520834!5m2!1sth!2sth",
     image: "/images/branches/sriracha-tiger-zoo.jpg",
+    images: [
+      "/images/branches/sriracha-tiger-zoo-interior-1.jpg",
+      "/images/branches/sriracha-tiger-zoo-interior-2.jpg",
+      "/images/branches/sriracha-tiger-zoo-interior-3.jpg",
+      "/images/branches/sriracha-tiger-zoo-interior-4.jpg",
+    ],
     parking: true,
   },
 ]
