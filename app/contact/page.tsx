@@ -52,13 +52,13 @@ function HeroSection() {
         >
             <div className="container-anin">
                 <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px] items-center gap-0">
-                    <div className="flex flex-col gap-5 py-14 lg:py-20 pr-0 lg:pr-12">
+                    <div className="flex flex-col gap-5 py-10 lg:py-16 pr-0 lg:pr-12">
                         <h1 className="text-[2.6rem] lg:text-[3rem] font-bold text-blue-900 leading-[1.2]">
                             ติดต่อสาขา
                             <br />
                             และส่วนงาน
                         </h1>
-                        <p className="text-[0.95rem] text-neutral-500 leading-relaxed max-w-md">
+                        <p className="text-base lg:text-lg text-neutral-500 leading-relaxed max-w-md">
                             ทุกสาขาดูแลโดยเภสัชกรวิชาชีพ ภายใต้
                             มาตรฐานเดียวกัน เพื่อส่งมอบ
                             "ยาใช่ ใช้ถูก ปลอดภัย" ที่อนิน
@@ -68,7 +68,7 @@ function HeroSection() {
                                 href={LINE_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-sm px-6 py-3 rounded-lg transition-colors shadow-sm"
+                                className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-base px-6 py-3 rounded-lg transition-colors shadow-sm"
                             >
                                 <LineIcon />
                                 ปรึกษาเภสัชกรผ่าน LINE
@@ -102,8 +102,8 @@ function HeroSection() {
                             <div key={i} className="flex items-center gap-3">
                                 <f.icon className="w-6 h-6 text-blue-700 shrink-0" />
                                 <div>
-                                    <p className="text-sm font-semibold text-blue-900">{f.label}</p>
-                                    <p className="text-xs text-neutral-400">{f.sub}</p>
+                                    <p className="text-base font-semibold text-blue-900">{f.label}</p>
+                                    <p className="text-sm text-neutral-400">{f.sub}</p>
                                 </div>
                             </div>
                         ))}
@@ -184,7 +184,7 @@ function ImageCarouselSection() {
 /* ── Section 2: Branches ── */
 function BranchesSection() {
     return (
-        <section className="bg-white py-16 lg:py-20">
+        <section className="bg-white py-12 lg:py-16">
             <div className="container-anin flex flex-col gap-6">
                 <h2 className="text-xl lg:text-2xl font-bold text-blue-900 flex items-center gap-2">
                     <Store className="w-5 h-5" /> สาขาของเรา
@@ -214,7 +214,7 @@ function BranchesSection() {
                                     <h3 className="text-base font-bold text-blue-900">{branch.name}</h3>
                                 </div>
 
-                                <div className="flex flex-col gap-2 text-sm text-neutral-500">
+                                <div className="flex flex-col gap-2 text-base text-neutral-500">
                                     <div className="flex gap-2">
                                         <MapPin className="w-4 h-4 shrink-0" />
                                         <span>{branch.address}</span>
@@ -235,7 +235,7 @@ function BranchesSection() {
                                         href={branch.mapUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                                        className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-base font-semibold py-2.5 rounded-lg transition-colors"
                                     >
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
                                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
@@ -246,7 +246,7 @@ function BranchesSection() {
                                     <div className="grid grid-cols-2 gap-2">
                                         <a
                                             href={`tel:${branch.phone.replace(/-/g, "")}`}
-                                            className="flex items-center justify-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                                            className="flex items-center justify-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 text-base font-semibold py-2.5 rounded-lg transition-colors"
                                         >
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.03 1.2 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
@@ -257,7 +257,7 @@ function BranchesSection() {
                                             href={LINE_URL}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                                            className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white text-base font-semibold py-2.5 rounded-lg transition-colors"
                                         >
                                             <LineIcon />
                                             ปรึกษาผ่าน LINE
@@ -278,7 +278,7 @@ function FAQSection() {
     const [open, setOpen] = useState<number | null>(null)
 
     return (
-        <section className="bg-surface-alt py-16 lg:py-20">
+        <section className="bg-surface-alt py-12 lg:py-16">
             <div className="container-anin">
                 <h2 className="text-xl lg:text-2xl font-bold text-blue-900 flex items-center gap-2 mb-8">
                     <MessageCircle className="w-5 h-5" /> คำถามที่พบบ่อย
@@ -291,7 +291,7 @@ function FAQSection() {
                                 onClick={() => setOpen(open === i ? null : i)}
                                 className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-blue-50 transition-colors"
                             >
-                                <span className="text-sm font-medium text-blue-900">{faq.q}</span>
+                                <span className="text-base font-medium text-blue-900">{faq.q}</span>
                                 <svg
                                     width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C5FD4" strokeWidth="2"
                                     className={`shrink-0 transition-transform ${open === i ? "rotate-180" : ""}`}
@@ -301,7 +301,7 @@ function FAQSection() {
                             </button>
                             {open === i && (
                                 <div className="px-5 pb-5">
-                                    <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
+                                    <p className="text-base text-neutral-500 leading-relaxed">{faq.a}</p>
                                 </div>
                             )}
                         </div>
@@ -309,7 +309,7 @@ function FAQSection() {
                 </div>
 
                 <div className="mt-6 text-center">
-                    <a href="#" className="text-sm text-blue-600 hover:underline font-medium">
+                    <a href="#" className="text-base text-blue-600 hover:underline font-medium">
                         ดูคำถามทั้งหมด →
                     </a>
                 </div>
@@ -321,7 +321,7 @@ function FAQSection() {
 /* ── Section 4: Department Contact ── */
 function DepartmentContactSection() {
     return (
-        <section className="bg-white py-16 lg:py-20">
+        <section className="bg-white py-12 lg:py-16">
             <div className="container-anin">
                 <h2 className="text-xl lg:text-2xl font-bold text-blue-900 flex items-center gap-2 mb-8">
                     <Phone className="w-5 h-5" /> ติดต่อฝ่ายงานและแจ้งเรื่อง
@@ -336,21 +336,21 @@ function DepartmentContactSection() {
                                 <DeptIcon className="w-6 h-6 text-blue-700" />
                             </div>
                             <div className="flex flex-col gap-1 flex-1">
-                                <p className="text-sm font-semibold text-blue-900 leading-snug">{dept.label}</p>
-                                <p className="text-xs text-neutral-400 leading-relaxed">{dept.description}</p>
+                                <p className="text-base font-semibold text-blue-900 leading-snug">{dept.label}</p>
+                                <p className="text-sm text-neutral-400 leading-relaxed">{dept.description}</p>
                             </div>
 
                             {dept.type === "email" && dept.email && (
                                 <>
                                     <p
-                                        className="text-xs text-blue-600 font-medium"
+                                        className="text-sm text-blue-600 font-medium"
                                     /* obfuscate: แสดง email แต่ไม่ใส่ plain text ใน href โดยตรง */
                                     >
                                         {dept.email}
                                     </p>
                                     <a
                                         href={`mailto:${dept.email}`}
-                                        className="flex items-center justify-center gap-1 border border-blue-700 text-blue-700 hover:bg-blue-50 text-xs font-semibold py-2 rounded-lg transition-colors"
+                                        className="flex items-center justify-center gap-1 border border-blue-700 text-blue-700 hover:bg-blue-50 text-sm font-semibold py-2 rounded-lg transition-colors"
                                     >
                                         ส่งอีเมล
                                     </a>
@@ -362,7 +362,7 @@ function DepartmentContactSection() {
                                     href={dept.formUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-1 bg-blue-700 hover:bg-blue-800 text-white text-xs font-semibold py-2 rounded-lg transition-colors"
+                                    className="flex items-center justify-center gap-1 bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold py-2 rounded-lg transition-colors"
                                 >
                                     แจ้งผ่าน Google Form
                                 </a>

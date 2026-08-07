@@ -93,7 +93,7 @@ function HeroSection() {
                 &ldquo;ยาใช่ ใช้ถูก ปลอดภัย&rdquo;
               </p>
               <div className="w-12 h-0.5 bg-gold-500" />
-              <p className="text-blue-100 text-sm leading-relaxed max-w-lg">
+              <p className="text-blue-100 text-base leading-relaxed max-w-lg">
                 จำหน่ายยาสามัญประจำบ้าน ยาโรคเรื้อรัง อาหารเสริม วิตามิน
                 สมุนไพร อาหารทางการแพทย์ เวชสำอาง สกินแคร์
                 อุปกรณ์การแพทย์ อุปกรณ์ทำแผล ชุดตรวจต่างๆ
@@ -104,7 +104,7 @@ function HeroSection() {
                 href={LINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="self-start inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-sm px-5 py-3 rounded-lg transition-colors shadow-sm mt-2"
+                className="self-start inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-base px-5 py-3 rounded-lg transition-colors shadow-sm mt-2"
               >
                 <LineIcon />
                 ปรึกษาเภสัชกร ANIN
@@ -133,7 +133,7 @@ function HeroSection() {
 /* ── Section 2: How it works ── */
 function HowItWorksSection() {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-12 lg:py-16">
       <div className="container-anin">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4">
           {howItWorks.map((step) => {
@@ -146,8 +146,8 @@ function HowItWorksSection() {
                 <div className="w-6 h-6 rounded-full border border-blue-700 text-blue-700 text-xs font-bold flex items-center justify-center">
                   {step.num}
                 </div>
-                <p className="text-sm font-bold text-blue-900 leading-snug">{step.title}</p>
-                <p className="text-xs text-neutral-500 leading-relaxed">{step.desc}</p>
+                <p className="text-base font-bold text-blue-900 leading-snug">{step.title}</p>
+                <p className="text-sm text-neutral-500 leading-relaxed">{step.desc}</p>
               </div>
             )
           })}
@@ -164,7 +164,7 @@ function SymptomsSection() {
       <div className="container-anin">
         <div className="mb-6">
           <h2 className="text-xl lg:text-2xl font-bold text-blue-900">ดูกลุ่มอาการที่พบบ่อย</h2>
-          <p className="text-sm text-neutral-500 mt-1">
+          <p className="text-base text-neutral-500 mt-1">
             เมื่อกดที่อาการ จะเข้าสู่หน้าให้ความรู้และคำแนะนำโดยละเอียด
           </p>
         </div>
@@ -177,7 +177,7 @@ function SymptomsSection() {
                 <div className="w-14 h-14 rounded-full bg-surface-alt group-hover:bg-blue-50 flex items-center justify-center text-blue-700 transition-colors">
                   <Icon className="w-6 h-6" />
                 </div>
-                <span className="text-xs text-neutral-600">{s.label}</span>
+                <span className="text-sm text-neutral-600">{s.label}</span>
               </Link>
             )
           })}
@@ -186,7 +186,7 @@ function SymptomsSection() {
             <div className="w-14 h-14 rounded-full bg-blue-700 hover:bg-blue-800 flex items-center justify-center text-white transition-colors">
               <ArrowRight className="w-5 h-5" />
             </div>
-            <span className="text-xs text-blue-700 font-medium">ดูทั้งหมด</span>
+            <span className="text-sm text-blue-700 font-medium">ดูทั้งหมด</span>
           </Link>
         </div>
 
@@ -241,8 +241,8 @@ function RecommendedProductsSection() {
                     <ImagePlaceholderIcon className="w-8 h-8" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-blue-900">{p.name}</p>
-                    <p className="text-xs text-neutral-500 leading-relaxed mt-0.5">{p.desc}</p>
+                    <p className="text-base font-bold text-blue-900">{p.name}</p>
+                    <p className="text-sm text-neutral-500 leading-relaxed mt-0.5">{p.desc}</p>
                   </div>
                 </div>
               </div>

@@ -33,7 +33,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-blue-700 ${
+              className={`text-base font-medium transition-colors hover:text-blue-700 ${
                 pathname === link.href
                   ? "text-blue-700 border-b-2 border-blue-700 pb-0.5"
                   : "text-neutral-500"
@@ -49,7 +49,7 @@ export default function Header() {
           href={LINE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors shrink-0"
+          className="hidden md:flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white text-base font-medium px-4 py-2 rounded-lg transition-colors shrink-0"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
             <path d="M12 2C6.48 2 2 6.08 2 11.1c0 3.05 1.6 5.76 4.1 7.5-.18.63-.65 2.28-.74 2.63-.12.43.16.43.34.31.14-.09 1.82-1.23 2.56-1.73.54.08 1.12.12 1.74.12 5.52 0 10-4.08 10-9.1S17.52 2 12 2z"/>
@@ -75,7 +75,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className={`text-sm font-medium py-2 border-b border-border-light transition-colors ${
+              className={`text-base font-medium py-2 border-b border-border-light transition-colors ${
                 pathname === link.href
                   ? "text-blue-700"
                   : "text-neutral-500 hover:text-blue-700"
@@ -88,7 +88,7 @@ export default function Header() {
             href={LINE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[#06C755] text-white text-sm font-medium px-4 py-3 rounded-lg mt-2"
+            className="flex items-center justify-center gap-2 bg-[#06C755] text-white text-base font-medium px-4 py-3 rounded-lg mt-2"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
               <path d="M12 2C6.48 2 2 6.08 2 11.1c0 3.05 1.6 5.76 4.1 7.5-.18.63-.65 2.28-.74 2.63-.12.43.16.43.34.31.14-.09 1.82-1.23 2.56-1.73.54.08 1.12.12 1.74.12 5.52 0 10-4.08 10-9.1S17.52 2 12 2z"/>

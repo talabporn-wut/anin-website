@@ -32,7 +32,7 @@ function ReviewCard({ review }: { review: (typeof reviews)[0] }) {
           <StarIcon key={i} />
         ))}
       </div>
-      <p className="text-sm text-neutral-500 leading-relaxed line-clamp-4 flex-1">
+      <p className="text-base text-neutral-500 leading-relaxed line-clamp-4 flex-1">
         "{review.text}"
       </p>
       <div className="flex items-center justify-between mt-auto">
@@ -69,7 +69,7 @@ export default function SocialProofSection() {
   const next = () => scrollTo(Math.min(maxIndex, current + 1))
 
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-12 lg:py-16">
       <div className="container-anin flex flex-col gap-10">
 
         {/* Reviews Row */}

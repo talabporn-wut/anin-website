@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[520px] items-center gap-0">
 
           {/* Left: Text */}
-          <div className="flex flex-col gap-5 py-16 lg:py-20 pr-0 lg:pr-12">
+          <div className="flex flex-col gap-5 py-12 lg:py-16 pr-0 lg:pr-12">
             <h1 className="text-[2.6rem] lg:text-[3rem] font-bold text-blue-900 leading-[1.2]">
               ยาและผลิตภัณฑ์สุขภาพ
               <br />
@@ -19,7 +19,7 @@ export default function HeroSection() {
               <span className="text-blue-900">อาจไม่เหมือนกัน</span>
             </h1>
 
-            <p className="text-[0.95rem] text-neutral-500 leading-relaxed max-w-md">
+            <p className="text-base lg:text-lg text-neutral-500 leading-relaxed max-w-md">
               เภสัชกร ANIN พร้อมช่วยประเมินความเหมาะสม
               และให้คำแนะนำ เพื่อช่วยให้ท่านได้รับยา
               และผลิตภัณฑ์สุขภาพที่เหมาะสม ใช้อย่างถูกต้อง
@@ -31,7 +31,7 @@ export default function HeroSection() {
                 href={LINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-base px-6 py-3 rounded-lg transition-colors shadow-sm"
               >
                 <LineIcon />
                 ปรึกษาเภสัชกรผ่าน LINE

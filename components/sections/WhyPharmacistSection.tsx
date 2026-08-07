@@ -1,18 +1,18 @@
-import { ClipboardList, Heart, Pill, Leaf, HeartHandshake, Users, Wallet } from "lucide-react"
+import { ClipboardList, Heart, Pill, Leaf, Baby, Users, Wallet } from "lucide-react"
 
 const factors = [
   { icon: ClipboardList, label: "อาการและความต้องการ" },
   { icon: Heart, label: "โรคประจำตัว" },
   { icon: Pill, label: "ยาที่ใช้อยู่" },
   { icon: Leaf, label: "วิตามินหรืออาหารเสริมที่รับประทาน" },
-  { icon: HeartHandshake, label: "การตั้งครรภ์หรือให้นมบุตร" },
+  { icon: Baby, label: "การตั้งครรภ์หรือให้นมบุตร" },
   { icon: Users, label: "ช่วงวัย" },
   { icon: Wallet, label: "งบประมาณ" },
 ]
 
 export default function WhyPharmacistSection() {
   return (
-    <section className="bg-surface-alt py-16 lg:py-20">
+    <section className="bg-surface-alt py-12 lg:py-16">
       <div className="container-anin">
         <div className="text-center mb-10">
           <h2 className="text-2xl lg:text-[1.75rem] font-bold text-blue-900">
@@ -29,7 +29,7 @@ export default function WhyPharmacistSection() {
               <div className="w-14 h-14 rounded-full bg-white border border-border shadow-xs flex items-center justify-center">
                 <f.icon className="w-6 h-6 text-blue-700" />
               </div>
-              <p className="text-[0.75rem] text-neutral-500 leading-tight">{f.label}</p>
+              <p className="text-sm text-neutral-500 leading-tight">{f.label}</p>
             </div>
           ))}
         </div>

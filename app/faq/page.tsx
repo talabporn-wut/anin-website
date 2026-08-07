@@ -68,7 +68,7 @@ function HeroSection() {
               <span className="shrink-0 w-9 h-9 rounded-lg bg-white border border-border flex items-center justify-center shadow-xs">
                 <LineIcon className="text-[#06C755]" />
               </span>
-              <span className="text-sm leading-snug">
+              <span className="text-base leading-snug">
                 <span className="block text-neutral-600">หากไม่พบคำตอบที่ต้องการ</span>
                 <span className="block text-blue-700 font-medium group-hover:underline">
                   เภสัชกร ANIN พร้อมให้คำแนะนำผ่าน LINE
@@ -130,7 +130,7 @@ function FAQListSection() {
               <button
                 key={cat.id}
                 onClick={() => { setActiveTab(cat.id); setOpenIndex(null); setShowAll(false) }}
-                className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-colors ${
                   activeTab === cat.id
                     ? "bg-blue-900 text-white"
                     : "bg-surface-alt text-neutral-500 hover:bg-blue-50 hover:text-blue-700"
@@ -152,7 +152,7 @@ function FAQListSection() {
                   <span className="shrink-0 w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-bold flex items-center justify-center mt-0.5">
                     Q
                   </span>
-                  <span className="flex-1 text-sm font-medium text-blue-900">{item.q}</span>
+                  <span className="flex-1 text-base font-medium text-blue-900">{item.q}</span>
                   <svg
                     width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C5FD4" strokeWidth="2"
                     className={`shrink-0 mt-0.5 transition-transform ${openIndex === i ? "rotate-180" : ""}`}
@@ -165,7 +165,7 @@ function FAQListSection() {
                     <span className="shrink-0 w-6 h-6 rounded-full bg-gold-100 text-gold-600 text-xs font-bold flex items-center justify-center mt-0.5">
                       A
                     </span>
-                    <p className="text-sm text-neutral-500 leading-relaxed">{item.a}</p>
+                    <p className="text-base text-neutral-500 leading-relaxed">{item.a}</p>
                   </div>
                 )}
               </div>
@@ -177,7 +177,7 @@ function FAQListSection() {
             <div className="mt-6">
               <button
                 onClick={() => setShowAll(!showAll)}
-                className="flex items-center gap-2 mx-auto text-sm text-neutral-500 border border-border px-6 py-2.5 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="flex items-center gap-2 mx-auto text-base text-neutral-500 border border-border px-6 py-2.5 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 {showAll ? "แสดงน้อยลง" : `ดูคำถามในหมวดนี้ทั้งหมด (${filtered.length})`}
                 <svg
@@ -217,7 +217,7 @@ function FAQClosingCTA() {
           {/* Text */}
           <div className="flex-1 flex flex-col gap-1 text-center lg:text-left">
             <h2 className="text-lg lg:text-xl font-bold text-blue-900">ยังไม่เจอคำตอบที่ต้องการ?</h2>
-            <p className="text-sm text-neutral-500">เภสัชกร ANIN พร้อมให้คำแนะนำและดูแลคุณผ่าน LINE</p>
+            <p className="text-base text-neutral-500">เภสัชกร ANIN พร้อมให้คำแนะนำและดูแลคุณผ่าน LINE</p>
           </div>
 
           {/* Buttons */}
@@ -226,21 +226,21 @@ function FAQClosingCTA() {
               href={LINE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-sm px-5 py-3 rounded-lg transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white font-semibold text-base px-5 py-3 rounded-lg transition-colors shadow-sm"
             >
               <LineIcon />
               ปรึกษาเภสัชกร ผ่าน LINE
             </a>
             <a
               href="tel:0820311590"
-              className="inline-flex items-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 font-semibold text-sm px-5 py-3 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 font-semibold text-base px-5 py-3 rounded-lg transition-colors"
             >
               <Phone className="w-4 h-4" />
               โทรหาเรา
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 font-semibold text-sm px-5 py-3 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 border border-blue-700 text-blue-700 hover:bg-blue-50 font-semibold text-base px-5 py-3 rounded-lg transition-colors"
             >
               <Store className="w-4 h-4" />
               เลือกสาขาใกล้คุณ

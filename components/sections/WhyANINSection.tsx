@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function WhyANINSection() {
   return (
-    <section className="bg-blue-900 py-16 lg:py-20">
+    <section className="bg-blue-900 py-12 lg:py-16">
       <div className="container-anin">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
@@ -21,7 +21,7 @@ export default function WhyANINSection() {
             </h2>
             <Link
               href="/standard"
-              className="self-start inline-flex items-center gap-2 border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-blue-900 font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors mt-2"
+              className="self-start inline-flex items-center gap-2 border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-blue-900 font-semibold text-base px-5 py-2.5 rounded-lg transition-colors mt-2"
             >
               ดูมาตรฐาน ANIN
             </Link>
