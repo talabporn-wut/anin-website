@@ -67,7 +67,17 @@ export default function Footer() {
                     </svg>
                   ),
                 },
-              ].map((s) => (
+              ].map((s) =>
+                s.href === "#" ? (
+                <span
+                  key={s.label}
+                  aria-label={s.label}
+                  title="เร็วๆ นี้"
+                  className="w-9 h-9 rounded-full bg-blue-800 flex items-center justify-center opacity-50 cursor-default"
+                >
+                  {s.svg}
+                </span>
+                ) : (
                 <a
                   key={s.label}
                   href={s.href}
@@ -78,7 +88,8 @@ export default function Footer() {
                 >
                   {s.svg}
                 </a>
-              ))}
+                )
+              )}
             </div>
           </div>
 

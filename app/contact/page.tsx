@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import {
     UserCheck,
     BadgeCheck,
@@ -309,9 +310,9 @@ function FAQSection() {
                 </div>
 
                 <div className="mt-6 text-center">
-                    <a href="#" className="text-base text-blue-600 hover:underline font-medium">
+                    <Link href="/faq" className="text-base text-blue-600 hover:underline font-medium">
                         ดูคำถามทั้งหมด →
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
@@ -357,7 +358,7 @@ function DepartmentContactSection() {
                                 </>
                             )}
 
-                            {dept.type === "form" && dept.formUrl && (
+                            {dept.type === "form" && dept.formUrl && dept.formUrl !== "https://forms.google.com" && (
                                 <a
                                     href={dept.formUrl}
                                     target="_blank"
