@@ -166,7 +166,9 @@ export default function Footer() {
             </h6>
             <ul className="flex flex-col gap-3">
               {[
-                { label: "เงื่อนไขการใช้งาน และ PDPA", href: "/terms" },
+                { label: "ข้อกำหนดการใช้งาน", href: "/terms" },
+                { label: "นโยบายความเป็นส่วนตัว", href: "/privacy" },
+                { label: "ข้อจำกัดความรับผิดด้านสุขภาพ", href: "/medical-disclaimer" },
                 { label: "นโยบายคุกกี้", href: "/cookie-policy" },
               ].map((item) => (
                 <li key={item.label}>
